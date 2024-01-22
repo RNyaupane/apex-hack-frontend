@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.otp__code__container input {
+    border: 1px solid black;
+}
+
+.otp__code__container input:focus {
+    outline: 1px solid rgb(79, 79, 79);
+}
