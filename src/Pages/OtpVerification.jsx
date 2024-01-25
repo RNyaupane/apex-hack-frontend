@@ -4,9 +4,17 @@ import AuthHeading from "../components/AuthHeading";
 import AuthImage from "../components/AuthImage";
 import { getSectionStyle } from "../data/Const";
 
+const maskEmail = (email) => {
+  const [username, domain] = email.split("@");
+  const maskedUsername = `${username.slice(0, 3)}***${username.slice(-2)}`;
+
+  return `${maskedUsername}@${domain}`;
+};
+
 const OtpVerification = () => {
   const [OTP, setOTP] = useState("");
   const sectionStyle = getSectionStyle();
+  const maskedEmail = maskEmail("neupaner590@gmail.com");
 
   return (
     <>
@@ -28,7 +36,7 @@ const OtpVerification = () => {
                 OTPLength={4}
                 otpType="number"
                 disabled={false}
-                // secure
+              // secure
               />
               <ResendOTP
                 className=" "
@@ -47,7 +55,7 @@ const OtpVerification = () => {
             <div className="mt-4 font-semibold text-center text-sm text-slate-500 text-center md:text-left">
               One Time Password (OTP) has been sent to{" "}
               <p className=" text-gray-700 underline cursor-pointer">
-                neupaner590@gmail.com
+                {maskedEmail}
               </p>
             </div>
           </div>

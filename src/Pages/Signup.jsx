@@ -46,7 +46,7 @@ const Signup = () => {
               </div>
               <div className="text-center md:text-left">
                 <button
-                  className="mt-6 bg-blue-600 hover:bg-blue-700 px-10 py-3 text-white uppercase rounded text-sm tracking-wider"
+                  className="mt-6 bg-blue-600 hover:bg-blue-700 px-5 py-3 text-white uppercase rounded text-sm tracking-wider"
                   type="submit"
                 >
                   Sign up

@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import ForgotPassword from "./Pages/ForgotPassword";
 import OtpVerification from "./Pages/otpVerification";
 import ChangePassword from "./Pages/ChangePassword";
+import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />}></Route>
           <Route path="/otp-verification" element={<OtpVerification />}></Route>
           <Route path="/change-password" element={<ChangePassword />}></Route>
+          <Route path="/" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
     </>
